@@ -8,6 +8,7 @@ declare const Swal:any;
   styleUrls: ['./franquicias.component.css']
 })
 export class FranquiciasComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
 
    //estructura de json para almacenar
   franquicia:any={
@@ -27,7 +28,7 @@ export class FranquiciasComponent implements OnInit {
   guardar():void{
 
     //conexión con el backend- función para insertar o guardar datos
-    this.http.post("http://localhost:8080/api/franquicias/insertar", this.franquicia)
+    this.http.post(this.api_URI+"franquicias/insertar", this.franquicia)
     .subscribe((Res:any)=>{
       console.log(Res);
 

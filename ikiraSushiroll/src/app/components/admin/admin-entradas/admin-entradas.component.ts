@@ -12,6 +12,7 @@ declare const Swal:any;
 })
 export class AdminEntradasComponent implements OnInit {
   infoConsulta : any;
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   //enlazar la router
   constructor(private rou:Router, private http: HttpClient) { }
 
@@ -24,7 +25,7 @@ export class AdminEntradasComponent implements OnInit {
 
   //conexión con el backend- función para buscar
   listar():void{
-    this.http.get("http://localhost:8080/api/entradas/consultar",{responseType:"json"})
+    this.http.get(this.api_URI+"entradas/consultar",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.infoConsulta = Res;
@@ -42,7 +43,7 @@ export class AdminEntradasComponent implements OnInit {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           Swal.fire('Eliminado', '', 'success');
-          this.http.delete("http://localhost:8080/api/entradas/eliminar/"+x)
+          this.http.delete(this.api_URI+"entradas/eliminar/"+x)
           .subscribe((Res:any)=>{
           console.log(Res);
           this.listar();

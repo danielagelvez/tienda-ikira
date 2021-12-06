@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./bebidas.component.css']
 })
 export class BebidasComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   //variable que almacena la informacion backend
   bebidas:any;
   //enlazar la router
@@ -20,7 +21,7 @@ export class BebidasComponent implements OnInit {
 
   //conexión con el backend- función para buscar
   listar():void{
-    this.http.get("http://localhost:8080/api/bebidas/consultar",{responseType:"json"})
+    this.http.get(this.api_URI+"bebidas/consultar",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.bebidas=Res ;

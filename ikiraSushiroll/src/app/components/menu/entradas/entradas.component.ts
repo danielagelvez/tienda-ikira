@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./entradas.component.css']
 })
 export class EntradasComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   entradas:any;
   //variable que almacena la informacion backend
   infoConsulta:any;
@@ -22,7 +23,7 @@ export class EntradasComponent implements OnInit {
   }
    //conexión con el backend- función para buscar
   listar():void{
-    this.http.get("http://localhost:8080/api/entradas/consultar",{responseType:"json"})
+    this.http.get(this.api_URI+"entradas/consultar",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.entradas=Res ;

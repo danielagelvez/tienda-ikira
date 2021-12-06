@@ -9,6 +9,7 @@ declare const Swal:any;
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
 
   loginI:any={
     usuario:"",
@@ -23,7 +24,7 @@ export class LoginComponent implements OnInit {
     console.log(this.loginI)
     //alert(this.loginI.usu+"  "+this.loginI.con);
 
-    this.http.get("http://localhost:8080/api/usuario/consultarVariosParametros/"+this.loginI.usuario+"/"+this.loginI.clave_usuario+"",{responseType:"json"})
+    this.http.get(this.api_URI+"usuario/consultarVariosParametros/"+this.loginI.usuario+"/"+this.loginI.clave_usuario+"",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
 

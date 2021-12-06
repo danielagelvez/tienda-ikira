@@ -10,6 +10,7 @@ declare const Swal:any;
   styleUrls: ['./contactanos.component.css']
 })
 export class ContactanosComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
 
   //estructura de json para almacenar
   contacto:any={
@@ -26,7 +27,7 @@ export class ContactanosComponent implements OnInit {
   guardar():void{
 
     //conexión con el backend- función para insertar o guardar datos
-    this.http.post("http://localhost:8080/api/contactanos/insertar", this.contacto)
+    this.http.post(this.api_URI+"contactanos/insertar", this.contacto)
     .subscribe((Res:any)=>{
       console.log(Res);
 

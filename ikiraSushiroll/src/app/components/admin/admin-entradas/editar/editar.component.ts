@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./editar.component.css']
 })
 export class EditarComponent implements OnInit {
-
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   EditarE:any={
     id:"",
     nombre_entrada:"",
@@ -23,7 +23,7 @@ export class EditarComponent implements OnInit {
     //visualizar lo que tiene los parametros y colocar el id
     this.EditarE.id=this.rouvar.snapshot.params["x"];
 
-    this.http.get("http://localhost:8080/api/entradas/consultarIndividual/"+this.EditarE.id,{responseType:"json"})
+    this.http.get(this.api_URI+"entradas/consultarIndividual/"+this.EditarE.id,{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.EditarE.nombre_entrada= Res.nombre_entrada;
@@ -38,7 +38,7 @@ export class EditarComponent implements OnInit {
   Actualizar(){
 
      //conexión con el backend- función para actualizar
-    this.http.put("http://localhost:8080/api/entradas/actualizar/" +this.EditarE.id,this.EditarE)
+    this.http.put(this.api_URI+"entradas/actualizar/" +this.EditarE.id,this.EditarE)
     .subscribe((Res:any)=>{
     console.log(Res);
     alert("Actualizado satisfactoriamente");

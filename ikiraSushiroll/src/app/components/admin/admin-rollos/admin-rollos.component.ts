@@ -10,6 +10,7 @@ declare const Swal:any;
   styleUrls: ['./admin-rollos.component.css']
 })
 export class AdminRollosComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   infoConsulta : any;
   //enlazar la router
   constructor(private rou:Router, private http: HttpClient){ }
@@ -23,7 +24,7 @@ export class AdminRollosComponent implements OnInit {
 
   //conexión con el backend- función para buscar
   listar():void{
-    this.http.get("http://localhost:8080/api/rollos/consultar",{responseType:"json"})
+    this.http.get(this.api_URI+"rollos/consultar",{responseType:"json"})
     .subscribe((Res:any)=>{
       console.log(Res);
       this.infoConsulta = Res;
@@ -41,7 +42,7 @@ export class AdminRollosComponent implements OnInit {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           Swal.fire('Eliminado', '', 'success');
-          this.http.delete("http://localhost:8080/api/rollos/eliminar/"+x)
+          this.http.delete(this.api_URI+"rollos/eliminar/"+x)
           .subscribe((Res:any)=>{
           console.log(Res);
           this.listar();

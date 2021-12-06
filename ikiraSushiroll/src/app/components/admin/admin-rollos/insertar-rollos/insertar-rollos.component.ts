@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./insertar-rollos.component.css']
 })
 export class InsertarRollosComponent implements OnInit {
+  api_URI="http://ikira.jelastic.saveincloud.net/api/";
   //estructura de json para almacenar
   InsertarE:any={
     nombre_entrada:"",
@@ -26,7 +27,7 @@ export class InsertarRollosComponent implements OnInit {
   guardar():void{
 
     //conexión con el backend- función para insertar o guardar datos
-    this.http.post("http://localhost:8080/api/rollos/insertar", this.InsertarE)
+    this.http.post(this.api_URI+"rollos/insertar", this.InsertarE)
     .subscribe((Res:any)=>{
       console.log(Res);
       alert("Agregado correctamente");
