@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "6181f109e659abbfee884bd8"
+  },
+  "nombre_bebida": "Sake",
+  "precio_bebida": "8.000",
+  "imagen_bebida": "assets/img/sake.jpg"
+},{
+  "_id": {
+    "$oid": "6181f1b8e659abbfee884bd9"
+  },
+  "nombre_bebida": "Té",
+  "precio_bebida": "4.000",
+  "imagen_bebida": "assets/img/tee.jpg"
+},{
+  "_id": {
+    "$oid": "6181f238e659abbfee884bda"
+  },
+  "nombre_bebida": "Cerveza",
+  "precio_bebida": "7.000",
+  "imagen_bebida": "assets/img/cerveza.jpg"
+},{
+  "_id": {
+    "$oid": "6181f2dbe659abbfee884bdb"
+  },
+  "nombre_bebida": "Agua",
+  "precio_bebida": "3.000",
+  "imagen_bebida": "assets/img/agua (2).jpg"
+}]

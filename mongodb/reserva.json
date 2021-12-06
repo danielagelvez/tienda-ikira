@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "6181f653e659abbfee884bf7"
+  },
+  "id_usuario": "123",
+  "id_mesa": "6",
+  "fecha_reserva": "Sun Dec 12 2021 00:00:00 GMT-0500 (hora estándar de Colombia)",
+  "hora_reserva": "10:00",
+  "cantidad_personas": "15",
+  "_class": "iKirasushiroll.demo.model.reservaModelo"
+},{
+  "_id": {
+    "$oid": "6181f970e659abbfee884bfa"
+  },
+  "id_usuario": "222",
+  "id_mesa": "10",
+  "fecha_reserva": "Fri Dec 02 2022 00:00:00 GMT-0500 (hora estándar de Colombia)",
+  "hora_reserva": "0",
+  "cantidad_personas": "10"
+},{
+  "_id": {
+    "$oid": "6181fac6e659abbfee884bfb"
+  },
+  "id_usuario": "154",
+  "id_mesa": "3",
+  "fecha_reserva": "Sun Dec 12 2021 00:00:00 GMT-0500 (hora estándar de Colombia)",
+  "hora_reserva": "0",
+  "cantidad_personas": "15"
+},{
+  "_id": {
+    "$oid": "6181fbaee659abbfee884bfc"
+  },
+  "id_usuario": "4567",
+  "cantidad_personas": "11",
+  "fecha_reserva": "Mon Nov 01 2021 00:00:00 GMT-0500 (hora estándar de Colombia)",
+  "hora_reserva": "0",
+  "id_mesa": "9"
+},{
+  "_id": {
+    "$oid": "000000000036aa18862509e5"
+  },
+  "id_usuario": "danig",
+  "id_mesa": "4",
+  "fecha_reserva": "08/12/2021",
+  "hora_reserva": "9:00",
+  "cantidad_personas": "21",
+  "_class": "iKirasushiroll.demo.model.reservaModelo"
+}]

@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "61ad37b89122c77c31e915dd"
+  },
+  "nombre_Ufranquicia": "start",
+  "correo_Ufranquicia": "danielagelvez01@",
+  "numero_contacto": "3106551852",
+  "horario": "mañana",
+  "medio": "telefono",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+},{
+  "_id": {
+    "$oid": "61ad3e479122c77c31e915de"
+  },
+  "nombre_Ufranquicia": "",
+  "correo_Ufranquicia": "",
+  "numero_contacto": "",
+  "horario": "",
+  "medio": "",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+},{
+  "_id": {
+    "$oid": "61ad3f379122c77c31e915df"
+  },
+  "nombre_Ufranquicia": "dnaie",
+  "correo_Ufranquicia": "dani@gmail.com",
+  "numero_contacto": "2345",
+  "horario": "",
+  "medio": "",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+},{
+  "_id": {
+    "$oid": "61ad404b9122c77c31e915e0"
+  },
+  "nombre_Ufranquicia": "prueaba",
+  "correo_Ufranquicia": "a@gmail.com",
+  "numero_contacto": "344",
+  "horario": "dia",
+  "medio": "",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+},{
+  "_id": {
+    "$oid": "61ad41859122c77c31e915e1"
+  },
+  "nombre_Ufranquicia": "elmer",
+  "correo_Ufranquicia": "rocha@gmail.com",
+  "numero_contacto": "3105",
+  "horario": "dia",
+  "medio": "correo",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+},{
+  "_id": {
+    "$oid": "61ad41d69122c77c31e915e2"
+  },
+  "nombre_Ufranquicia": "dff",
+  "correo_Ufranquicia": "sdfsdf@correo.com",
+  "numero_contacto": "999",
+  "horario": "tarde",
+  "medio": "telefono",
+  "_class": "iKirasushiroll.demo.model.franquiciasModelo"
+}]

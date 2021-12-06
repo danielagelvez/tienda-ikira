@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "61acfbe86d8c2c7fc1455025"
+  },
+  "usuario": "Danigelvez",
+  "nombre": "Daniela",
+  "apellido": "Gelvez",
+  "clave_usuario": "123",
+  "_class": "iKirasushiroll.demo.model.usuarioModelo"
+},{
+  "_id": {
+    "$oid": "61ad04376d8c2c7fc1455026"
+  },
+  "usuario": "ElmerRocha",
+  "nombre": "Elmer",
+  "apellido": "Rocha",
+  "clave_usuario": "859",
+  "_class": "iKirasushiroll.demo.model.usuarioModelo"
+}]

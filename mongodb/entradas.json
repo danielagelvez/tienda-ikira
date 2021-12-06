@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61ab714e2cba3a3f977ba0f4"
+  },
+  "nombre_entrada": "Camarones",
+  "ingredientes_entrada": "Camarones bañados en salsa de la casa, aguacate, tomate",
+  "precio_entrada": "18.000",
+  "imagen_entrada": "assets/img/camarones.jpg",
+  "_class": "iKirasushiroll.demo.model.entradasModelo"
+},{
+  "_id": {
+    "$oid": "61ab71782cba3a3f977ba0f5"
+  },
+  "nombre_entrada": "Ramen",
+  "ingredientes_entrada": "Caldo al estilo oriental, huevo, orellanas, cebollín, champiñones, cerdo, pollo y res",
+  "precio_entrada": "25.000",
+  "imagen_entrada": "assets/img/ramen.jpg",
+  "_class": "iKirasushiroll.demo.model.entradasModelo"
+},{
+  "_id": {
+    "$oid": "61ab71a62cba3a3f977ba0f6"
+  },
+  "nombre_entrada": "Pulpo iKira 2",
+  "ingredientes_entrada": "Pulpo con salsa teriyaki",
+  "precio_entrada": "18.000",
+  "imagen_entrada": "assets/img/pulpo.jpg",
+  "_class": "iKirasushiroll.demo.model.entradasModelo"
+},{
+  "_id": {
+    "$oid": "61ab720c2cba3a3f977ba0f7"
+  },
+  "nombre_entrada": "Ensalada chili",
+  "ingredientes_entrada": "Pepinillos, chile, tomate, cebolla",
+  "precio_entrada": "13.000",
+  "imagen_entrada": "assets/img/ensalada.jpg",
+  "_class": "iKirasushiroll.demo.model.entradasModelo"
+}]

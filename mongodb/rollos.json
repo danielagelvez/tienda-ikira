@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61ad8ca83db0a4350acc7155"
+  },
+  "nombre_rollos": "Sushi Clasico",
+  "ingredientes_rollos": "Alga nori, arroz, aguacate, zanahoria, queso crema",
+  "precio_rollos": "3000",
+  "imagen_rollos": "assets/img/sushi-clasico.jpg",
+  "_class": "iKirasushiroll.demo.model.rollosModelo"
+},{
+  "_id": {
+    "$oid": "61ad8ce33db0a4350acc7156"
+  },
+  "nombre_rollos": "Sushi Whiteo",
+  "ingredientes_rollos": "Alga nori, arroz, aguacate, salmon",
+  "precio_rollos": "28000",
+  "imagen_rollos": "assets/img/sushi-white.jpg",
+  "_class": "iKirasushiroll.demo.model.rollosModelo"
+},{
+  "_id": {
+    "$oid": "61ad8d213db0a4350acc7157"
+  },
+  "nombre_rollos": "Sushi IKira",
+  "ingredientes_rollos": "Alga nori, arroz, aguacate y anjonjoli, palmito de cangrejo, bañados en salsa teriyaki",
+  "precio_rollos": "30000",
+  "imagen_rollos": "assets/img/sushi-ikira.jpg",
+  "_class": "iKirasushiroll.demo.model.rollosModelo"
+},{
+  "_id": {
+    "$oid": "61ad8de73db0a4350acc7158"
+  },
+  "nombre_rollos": "Sushi Salmon",
+  "ingredientes_rollos": "Alga nori, Arroz, langostinos tempura, kanikama, envueltos en salmón asado a la parrilla y aguacate",
+  "precio_rollos": "29000",
+  "imagen_rollos": "assets/img/sushi-salmon.jpg",
+  "_class": "iKirasushiroll.demo.model.rollosModelo"
+}]
