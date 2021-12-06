@@ -1,0 +1,19 @@
+<h1>Actualizar Rollos </h1>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <p>Nombre rollos:</p>
+        <input type="text" name="nombre_rollos" [(ngModel)]="EditarE.nombre_rollos" placeholder="Nombre rollos" class="form-control">
+        <p>Ingredientes:</p>
+        <input type="text" [(ngModel)]="EditarE.ingredientes_rollos" placeholder="Ingredientes rollos" class="form-control">
+        <p>Precio:</p>
+        <input type="text" [(ngModel)]="EditarE.precio_rollos" placeholder="Precio rollos" class="form-control">
+        <p>Imagen:</p>
+        <input type="text" [(ngModel)]="EditarE.imagen_rollos" placeholder="Imagen rollos" class="form-control">
+        <hr>
+        <button (click)="Actualizar ()" class="btn btn-primary"><i class="fas fa-edit"></i> Actualizar</button> &nbsp;
+        <button (click)="cancelar ()" class="btn btn-warning"><i class="fas fa-undoe"></i> Regresar</button>
+    </div>
+    <div class="col-sm-3"></div>
+
+</div>

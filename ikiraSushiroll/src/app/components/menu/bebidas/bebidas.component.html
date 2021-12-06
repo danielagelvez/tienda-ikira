@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-md-2">
+    <div *ngFor="let bebida of bebidas">
+        <div class="card my-2">
+            <img [src]="bebida.imagen_bebida" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{bebida.nombre_bebida}}</h5>
+                <h3 class="card-text">{{bebida.precio_bebida}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+

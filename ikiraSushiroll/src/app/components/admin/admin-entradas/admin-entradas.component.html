@@ -1,0 +1,28 @@
+<button (click)="InsertarEntradas('')"class="btn btn-success">Insertar Nueva Entrada</button>
+<table class="table table-striped table-bordered table display " id="tabla_entradas">
+    <thead>
+        <tr>
+            <th>Nombre entrada</th>
+            <th>Ingredientes</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Opción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of infoConsulta">
+        <td>{{x.nombre_entrada}}</td>
+        <td>{{x.ingredientes_entrada}}</td>
+        <td>{{x.precio_entrada}}</td>
+        <td>{{x.imagen_entrada}}</td>
+        <td>{{x.id}}</td>
+        <td>
+            <button (click)="EditarEntradas(x.id)"class="btn btn-warning"><i class="fas fa-pencil-alt"></i>Editar</button> &nbsp;
+            <button (click)="eliminar(x.id)" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Eliminar</button>
+        </td>
+
+        </tr>
+    </tbody>
+
+</table>
+

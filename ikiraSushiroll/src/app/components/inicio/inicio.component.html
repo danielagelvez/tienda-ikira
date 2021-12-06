@@ -1,0 +1,50 @@
+
+<!-- Navbar -->
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <img src="./assets/img/iKira_banner.png" alt="Banner" id="Banner">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <a class="navbar-brand" [routerLink]="['/inicio/ikira']">IkiraSushiroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/inicio/nosotros']">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+                </a>
+                <!-- LINK DE LAS RUTAS -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" [routerLink]="['/inicio/entradas']">Entradas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" [routerLink]="['/inicio/rollos']">Rollos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" [routerLink]="['/inicio/bebidas']">Bebidas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/inicio/contactanos']">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/inicio/franquicias']">Franquicias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/inicio/reservas']">Reservas</a>
+            </li>
+            </ul>
+            <form class="d-flex">
+            </form>
+        </div>
+    </nav>
+</div>
+
+<div class="container mt-2">
+    <router-outlet></router-outlet>
+</div>
+
+

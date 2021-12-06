@@ -1,0 +1,15 @@
+<form (submit)= "guardar()" ngNativeValidate>
+    <br>
+    <h1>Nuevo rollo</h1>
+    <p>Nombre rollo:</p>
+    <!-- ng model envio el nombre del objeto-->
+    <input required name="nombre_rollos" type="text" [(ngModel)]="InsertarE.nombre_rollos" placeholder="Nombre de la entrada" class="form-control">
+    <p>Ingredientes</p>
+    <input required name="ingredientes_rollos" type="text" [(ngModel)]="InsertarE.ingredientes_rollos" placeholder="ingredientes de la entrada" class="form-control">
+    <p>Precio</p>
+    <input required name="precio_rollos" type="text" [(ngModel)]="InsertarE.precio_rollos" placeholder="Precio de la entrada" class="form-control">
+    <p>Imagen</p>
+    <input required name="imagen_rollos" type="text" [(ngModel)]="InsertarE.imagen_rollos" placeholder="imagen de la entrada" class="form-control">
+    <hr>
+    <button type="submit" class="btn btn-success">Guardar</button>
+</form>

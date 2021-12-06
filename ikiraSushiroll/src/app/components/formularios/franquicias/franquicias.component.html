@@ -1,0 +1,124 @@
+<div class="franquicia mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">CONVIERTE EN IKIRA MASTER</h5>
+            <p class="card-text">CON NUESTRAS FRANQUICIAS TENDRÁS EL NEGOCIO QUE TANTO SOÑASTE.</p>
+        </div>
+        <img src="./assets/img/franchise.jpg" class="card-img-bottom">
+    </div>
+    <nav>
+        <ul class="list-unstyled mt-4">
+            <li><a href="#etapa1">Etapa 1: Solicitud de Franquicia</a></li>
+            <li><a href="#etapa2">Etapa 2: Reunión de acercamiento</a></li>
+            <li><a href="#etapa3">Etapa 3: Revisión de manual de marca y verficación de viabilidad</a></li>
+            <li><a href="#etapa4">Etapa 4: Firma de contrato</a></li>
+            <li><a href="#etapa5">Etapa 5: Capacitación en manual de marca</a></li>
+        </ul>
+    </nav>
+    <section class="text-justify" id="#etapa1">
+        <article>
+            <a name="etapa1" id="etapa1"></a>
+            <h4 >Etapa 1: Solicitud de Franquicia </h4>
+            <p> En esta primera etapa recibimos su solicitud, nos pondremos en contacto y aendaremos la primera reunión de acercamiento. </p>
+        </article>
+        <article>
+            <h4>Puntos Clave Etapa 1</h4>
+            <ol>
+            <li>Dejanos un correo electrónico y un número telefónico en el cual podamos contactarte</li>
+            <li>Si pasadas mas de 48 horas aún no te contactamos, ingresa de nuevo la solicitud y dejanos un coreeo en: contacto@ikiraroll.com.co</li>
+            </ol>
+        </article>
+    </section>
+    <section class="text-justify" id="#etapa2">
+        <article>
+            <a name="etapa2" id="etapa2"></a>
+            <h4>Etapa 2: Reunión de acercamiento</h4>
+            <p>En esta primera reunión te contaremos todas las ventajas de hacer de IKIRA parte de tu vida, además podremos conocer porque quieres trabajar con nosotros y cuál es tu idea sobre el negocio</p>
+        </article>
+        <article>
+            <h4>Puntos Clave Etapa 2</h4>
+            <ol>
+                <li>Dejanos saber todas las dudas que tienes acerca del modelo de franquicias</li>
+                <li>Si la inversión es grupal, dejanos saberlo y podremos agendar una reunión con todos los interesados</li>
+            </ol>
+        </article>
+    </section>
+    <section class="text-justify" id="#etapa3">
+        <article>
+            <a name="etapa3" id="etapa3"></a>
+            <h4>Etapa 3: Revisión de manual de marca y verficación de viabilidad</h4>
+            <p>En esta segunda reunión te expondremos nuestro manual de marca y haremos el estudio de la viabilidad de la franquicia.</p>
+        </article>
+        <article>
+            <h4>Puntos Clave Etapa 3</h4>
+            <ol>
+                <li>Pide con anterioridad nuestra guía base del manual de marca, así podrás tener muchas preguntas para la reunión</li>
+                </ol>
+        </article>
+    </section>
+    <section class="text-justify" id="#etapa4">
+        <article>
+            <a name="etapa4" id="etapa4"></a>
+            <h4>Etapa 4: Firma de contrato</h4>
+            <p>Si el resultado del estudio es positivo, ya estamos solo a un paso de que puedas ser IKIRA MASTER, para ello debemos reunirnos para la firma del contrato.</p>
+        </article>
+        <article>
+            <h4>Puntos Clave Etapa 4</h4>
+            <ol>
+                <li>Te recomendamos que antes de la firma del contrato hayas podido revisar el borrador en conjunto con un profesional especializado en derecho comercial</li>
+                <li>Si la inversión es grupal, haz que todos participen de la revisión del contrato, de esta manera nos podemos asegurar que todos estén a gusto.</li>
+                </ol>
+        </article>
+    </section>
+    <section  class="text-justify" id="#etapa5">
+        <article>
+            <a class="my-3" name="etapa5" id="etapa5"></a>
+            <h4>Etapa 5: Capacitación en manual de marca y Apertura de Local</h4>
+            <img class="img-fluid" src="./assets/img/franquicia.jpg">
+            <p class="my-3">La última etapa hace referencia a la adecuación o construcción del local y a la capacitación del personal en el manual de marca.</p>
+        </article>
+        <article>
+            <h4>Puntos Clave Etapa 5</h4>
+            <ol>
+                <li>Lleva muchas ganas de aprender porque te enseñaremos todo sobre iKira para hacer de tu franquicia un gran negocio</li>
+                </ol>
+        </article>
+    </section>
+    <!-- tabla de datos-->
+    <form (submit)= "guardar()" ngNativeValidate >
+        <h4 class="my-3">Deja tus datos y un representante iKira se pondrá en contacto</h4>
+        <div class="row">
+            <div class="col">
+                <!-- ng model envio el nombre del objeto-->
+                <input required type="text" [(ngModel)]="franquicia.nombre_Ufranquicia" name="nombre_Ufranquicia" class="form-control" placeholder="Nombre completo" >
+            </div>
+            <div class="col">
+                <input required type="text" [(ngModel)]="franquicia.correo_Ufranquicia" name="correo_Ufranquicia" class="form-control" placeholder="Correo electrónico" >
+            </div>
+            <div class="col">
+                <input required type="text" [(ngModel)]="franquicia.numero_contacto"  name="numero_contacto" class="form-control" placeholder="Número Telefónico" >
+            </div>
+        </div>
+        <h4 class="my-3">Por favor indicanos en que horario y porque medio quires ser contactado</h4>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" [(ngModel)]="franquicia.horario" name="horario" id="inlineRadio1" value="dia">
+                <label class="form-check-label" for="inlineRadio1">En la mañana</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio"  [(ngModel)]="franquicia.horario" name="horario"  id="inlineRadio2" value="tarde">
+                <label class="form-check-label" for="inlineRadio2">En la tarde</label>
+            </div><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" [(ngModel)]="franquicia.medio" name="medio" id="inlineCheckbox1" value="telefono">
+                <label class="form-check-label" for="inlineCheckbox1">Teléfono</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" [(ngModel)]="franquicia.medio" name="medio" id="inlineCheckbox2" value="correo">
+                <label class="form-check-label" for="inlineCheckbox2">Correo</label>
+            </div>
+
+        <div class="my-3">
+            <button  type="submit" class="btn btn-success"><i class="far fa-save"></i> Enviar</button>
+        </div>
+    </form>
+</div>

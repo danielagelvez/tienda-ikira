@@ -1,0 +1,29 @@
+<div class="card mb-3">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="./assets/img/preguntas.png" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><b>¿Tienes preguntas?</b></h5>
+                <p class="card-text ikira-justificar">Para Ikira Sushi Roll es muy importante contar con las opiniones, comentarios y sugerencias de nuestros clientes.</p>
+                <p class="card-text ikira-justificar">Los invitamos a que nos escriban cualquier sugerencia y observación de nuestros productos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tabla de datos-->
+<br>
+<h1>Ingrese por favor los siguientes datos</h1>
+<form (submit)= "guardar()" ngNativeValidate>
+<p>Nombre:</p>
+<!-- ng model envio el nombre del objeto-->
+<input required type="text" [(ngModel)]="contacto.nombre_usuario" placeholder="Nombre completo" class="form-control">
+<p>Correo</p>
+<input type="email" [(ngModel)]="contacto.correo_usuario" placeholder="nombre@ejemplo.com" class="form-control">
+<p>Sugerencia</p>
+<input required type="text" [(ngModel)]="contacto.sugerencia_usuario" class="form-control">
+<hr>
+<button  type="submit" class="btn btn-success"><i class="far fa-save"></i> Enviar</button>
+</form>

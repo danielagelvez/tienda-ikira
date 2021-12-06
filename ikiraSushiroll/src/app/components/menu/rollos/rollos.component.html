@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-md-2">
+    <div *ngFor="let roll of rollo">
+        <div class="card my-2">
+            <img [src]="roll.imagen_rollos" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{roll.nombre_rollos}}</h5>
+                <p class="card-text"><b>Ingredientes:</b><br/>{{roll.ingredientes_rollos}}</p>
+                <h5 class="card-text">{{roll.precio_rollos}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
